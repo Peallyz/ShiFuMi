@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ShiFuMi/static/css/main.d26b7736.css",
+    "main.js": "/ShiFuMi/static/js/main.a9192ca5.js",
+    "index.html": "/ShiFuMi/index.html",
+    "main.d26b7736.css.map": "/ShiFuMi/static/css/main.d26b7736.css.map",
+    "main.a9192ca5.js.map": "/ShiFuMi/static/js/main.a9192ca5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d26b7736.css",
+    "static/js/main.a9192ca5.js"
+  ]
+}
