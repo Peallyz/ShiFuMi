@@ -1,0 +1,151 @@
+button {
+    &.circle {
+        position: relative;
+        width: 30%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        outline: none;
+        border: none;
+        z-index: 1;
+        cursor: pointer;
+        &:active {
+            transform: translateY(5px);
+        }
+        &#lock {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            @media screen and (max-width: 488px) {
+                width: 50%;
+            }
+        }
+
+        &.paper {
+            border: 20px solid hsl(230, 89%, 65%);
+            box-shadow: 0px 11px 0px -3px #ccd0db inset,
+                0 9px 0 0 hsl(230, 89%, 62%);
+            top: 5%;
+            left: 5%;
+            &.alter {
+                top: 25%;
+                left: 70%;
+                @media screen and (max-width: 600px) {
+                    left: 75%;
+                }
+            }
+            &:active {
+                box-shadow: 0px 11px 0px -3px #ccd0db inset,
+                    0 4px 0 0 hsl(230, 89%, 62%);
+            }
+            @media screen and (max-width: 800px) {
+                border: 10px solid hsl(230, 89%, 65%);
+            }
+
+            @media screen and (max-width: 600px) {
+                border: 8px solid hsl(230, 89%, 65%);
+                top: -5%;
+                left: -5%;
+            }
+        }
+        &.rock {
+            border: 20px solid hsl(349, 70%, 56%);
+            box-shadow: 0px 11px 0px -3px #ccd0db inset,
+                0 9px 0 0 hsl(349, 71%, 52%);
+            top: 55%;
+            left: 5%;
+            &.alter {
+                top: 65%;
+                left: 30%;
+                @media screen and (max-width: 600px) {
+                    top: 73%;
+                    left: 33%;
+                }
+            }
+            &:active {
+                box-shadow: 0px 11px 0px -3px #ccd0db inset,
+                    0 4px 0 0 hsl(349, 71%, 52%);
+            }
+            @media screen and (max-width: 800px) {
+                border: 10px solid hsl(349, 70%, 56%);
+                top: 55%;
+            }
+
+            @media screen and (max-width: 600px) {
+                border: 8px solid hsl(349, 70%, 56%);
+                top: 65%;
+            }
+        }
+        &.lizard {
+            border: 20px solid hsl(261, 72%, 63%);
+            box-shadow: 0px 11px 0px -3px #ccd0db inset,
+                0 9px 0 0 hsl(261, 73%, 60%);
+            top: 33%;
+            left: 13%;
+            &:active {
+                box-shadow: 0px 11px 0px -3px #ccd0db inset,
+                    0 4px 0 0 hsl(261, 73%, 60%);
+            }
+            @media screen and (max-width: 800px) {
+                border: 10px solid hsl(261, 72%, 63%);
+            }
+
+            @media screen and (max-width: 600px) {
+                border: 8px solid hsl(261, 72%, 63%);
+                top: 43%;
+                left: 10%;
+            }
+        }
+        &.scissors {
+            border: 20px solid hsl(40, 84%, 53%);
+            box-shadow: 0px 11px 0px -3px #ccd0db inset,
+                0 9px 0 0 hsl(39, 89%, 49%);
+            top: 5%;
+            right: 0%;
+            &.alter {
+                top: 0%;
+                right: 25%;
+                @media screen and (max-width: 600px) {
+                    top: -5%;
+                }
+            }
+            &:active {
+                box-shadow: 0px 11px 0px -3px #ccd0db inset,
+                    0 4px 0 0 hsl(39, 89%, 49%);
+            }
+            @media screen and (max-width: 800px) {
+                border: 10px solid hsl(40, 84%, 53%);
+            }
+
+            @media screen and (max-width: 600px) {
+                border: 8px solid hsl(40, 84%, 53%);
+                top: -5%;
+                right: -15%;
+            }
+        }
+        &.spock {
+            border: 20px solid hsl(189, 58%, 57%);
+            box-shadow: 0px 11px 0px -3px #ccd0db inset,
+                0 9px 0 0 hsl(189, 59%, 53%);
+            top: -8%;
+            left: -30%;
+            &:active {
+                box-shadow: 0px 11px 0px -3px #ccd0db inset,
+                    0 4px 0 0 hsl(189, 59%, 53%);
+            }
+            @media screen and (max-width: 800px) {
+                border: 10px solid hsl(189, 58%, 57%);
+            }
+
+            @media screen and (max-width: 600px) {
+                border: 8px solid hsl(189, 58%, 57%);
+                left: -35%;
+            }
+        }
+        img {
+            width: 40%;
+            pointer-events: none;
+        }
+    }
+}
